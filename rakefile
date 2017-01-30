@@ -1,0 +1,43 @@
+require 'rubygems'
+require 'rake'
+require 'rspec/core/rake_task'
+require "selenium-webdriver"
+require "rspec"
+
+ENV["env"] ||= 'production'
+environment = ENV['env']
+@browser = ENV['browser']
+
+
+desc "Run Tests"
+
+# RUN pcworld
+RSpec::Core::RakeTask.new('pcworld') do |t|
+
+  ENV['module'] = 'pcmag'
+
+  if(ENV['report_dir'] == nil)
+    ENV['report_dir'] = "../Reports/PCWorld/" + environment + "#{@folder_name}"
+  end 
+
+  @report_dir = ENV['report_dir']
+  
+  if(ENV['folderpath'] != nil)
+    @folder_name = ENV['folderpath']
+  else
+    @folder_name="/PCWorld_" + Time.now.strftime("%Y-%m-%d_%H-%M-%S")+ "_#{@browser}"
+  end
+  ENV['folderpath'] = @folder_name
+  @report_name1 = "#{@folder_name}"+".html"
+  @report_name2 = "#{@folder_name}"+".json"
+  @report_name3 = "#{@folder_name}"+".xml"
+
+  t.rspec_opts = ["-Ilib","--format documentation",
+                    "--format html --out  #{@report_dir}#{@report_name1}",
+                    "--format json --out  #{@report_dir}#{@report_name2}",
+                    "--format RspecJunitFormatter --out reports#{@report_name3}",
+                    "--color"]
+  t.pattern = [
+      'spec/test.rb'
+  ]
+end
