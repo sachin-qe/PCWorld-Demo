@@ -2,7 +2,7 @@ require "rake"
 require "selenium-webdriver"
 require "Function_Library"
 require "rspec"
-require "FileUtils"
+require "fileutils"
 require 'rest-client'
 
 class Helper
@@ -37,7 +37,7 @@ class Helper
           end
         else
           $flag1 = 1
-          print "<p>Server is Down</p>"            
+          print "<p>Server is Down config</p>"            
           exit 
         end 
       else 
@@ -54,5 +54,5 @@ class Helper
       end
     end
 
-  end
-end
+  end 
+end # Class end
