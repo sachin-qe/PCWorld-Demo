@@ -6,8 +6,8 @@ require "rubygems"
 require "spec_helper"
 require "yaml"
 
-# a = ENV['module']
-# Dir[File.dirname(__FILE__) + '/../pages/' + a + '/TemplatePage.rb'].each {|file| require file }
+a = ENV['module']
+Dir[File.dirname(__FILE__) + '/../pages/' + a + '/TemplatePage.rb'].each {|file| require file }
 
 class Function_Library 
 
@@ -62,6 +62,12 @@ class Function_Library
       open_base_URL(@base_url)
       return @driver
     end
+  end
+
+  def open_base_URL(base)
+   @driver.get(base)
+   @page = TemplatePage.new(@driver)
+   @page.openHomePage
   end
 
   def open_homepage
@@ -152,8 +158,6 @@ class Function_Library
   def selectDropdownOption(dropdownelement,texttoselect)
     option = Selenium::WebDriver::Support::Select.new(dropdownelement)
     option.select_by(:text, texttoselect)
-    # @selenium.find_element(:css,"input[type='button']").click
-    # getWait.until{@selenium.find_element(:css,"input[name='title']").displayed? == true}
   end
 
   def verify_response_code_RestClient(code)
