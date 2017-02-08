@@ -25,9 +25,20 @@ class TemplatePage
   end
 
   def openHomePage
-    # @driver.find_element(:,"").click
-    baseurl = @lib_obj.get_Base_URL
-    @driver.get(baseurl)
-    @lib_obj.waitforpagetoload  
+    begin
+      baseurl = @lib_obj.get_Base_URL
+      @driver.get(baseurl)
+      @lib_obj.waitforpagetoload  
+    rescue Exception => e
+      print e
+    end   
   end
-end
+
+  def elementisDisplayed(locator, value)
+    if (@driver.find_element(locator,value).displayed? == true)
+      return true
+    else
+      return false
+    end
+  end
+end # Class ends 
