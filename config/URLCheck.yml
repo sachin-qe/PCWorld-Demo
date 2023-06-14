@@ -1,3 +1,66 @@
-- http://www.pcworld.com/
-- http://www.pcworld.com/category/business/
-
+---
+Artcile_Id:
+  artcile_id: Article_9
+Article_1:
+- www.nyq.pcmag.com/category2/0,2806,1056652,00.asp
+- www.nyq.pcmag.com/category2/0,2806,2352,00.asp
+- www.nyq.pcmag.com/category2/0,2806,1638429,00.asp
+- www.nyq.pcmag.com/category2/0,2806,718512,00.asp
+- www.nyq.pcmag.com/category2/0,2806,1887099,00.asp
+- www.nyq.pcmag.com/category2/0,2806,1055639,00.asp
+- www.nyq.pcmag.com/products/25140?Company%3dMicrosoft+Corporation
+Article_2:
+- www.nyq.pcmag.com/reviews/cell-phones
+- www.nyq.pcmag.com/category2/0,2806,1831229,00.asp
+- www.nyq.pcmag.com/category2/0,2806,4768,00.asp
+- www.nyq.pcmag.com/reviews/mobile-apps
+- www.nyq.pcmag.com/products/1713?Company%3dNokia
+Article_3:
+- www.nyq.pcmag.com/reviews/software
+- www.nyq.pcmag.com/category2/0,2806,2128053,00.asp
+- www.nyq.pcmag.com/category2/0,2806,2128063,00.asp
+- www.nyq.pcmag.com/category2/0,2806,4838,00.asp
+- www.nyq.pcmag.com/category2/0,2806,1831229,00.asp
+- www.nyq.pcmag.com/products/27689?Company%3dGoogle%20Inc
+Article_4:
+- www.nyq.pcmag.com/category2/0,2806,6,00.asp
+- www.nyq.pcmag.com/category2/0,2806,1950517,00.asp
+- www.nyq.pcmag.com/reviews/HDTV
+- www.nyq.pcmag.com/category2/0,2806,1831229,00.asp
+- www.nyq.pcmag.com/products/1568?Company%3dSony+Corporation
+Article_5:
+- www.nyq.pcmag.com/category2/0,2806,2355097,00.asp
+- www.nyq.pcmag.com/reviews/printers
+- www.nyq.pcmag.com/reviews/scanners
+- www.nyq.pcmag.com/category2/0,2806,1638938,00.asp
+- www.nyq.pcmag.com/category2/0,2806,1638938,00.asp
+- www.nyq.pcmag.com/reviews/netbooks
+- www.nyq.pcmag.com/products/27994?Company%3dCanon+U.S.A.+Inc
+Article_6:
+- www.nyq.pcmag.com/reviews/laptop-computers
+- www.nyq.pcmag.com/category2/0,2806,2355086,00.asp
+- www.nyq.pcmag.com/reviews/netbooks
+- www.nyq.pcmag.com/products/1565?Company%3dLenovo
+Article_7:
+- www.nyq.pcmag.com/reviews/software
+- www.nyq.pcmag.com/category2/0,2806,2362,00.asp
+- www.nyq.pcmag.com/category2/0,2806,10435,00.asp
+- www.nyq.pcmag.com/category2/0,2806,3984,00.asp
+- www.nyq.pcmag.com/category2/0,2806,2128062,00.asp
+- www.nyq.pcmag.com/products/1647?Company%3dApple+Inc.
+Article_8:
+- www.nyq.pcmag.com/category2/0,2806,1638420,00.asp
+- www.nyq.pcmag.com/category2/0,2806,1638421,00.asp
+- www.nyq.pcmag.com/category2/0,2806,805487,00.asp
+- www.nyq.pcmag.com/category2/0,2806,1639152,00.asp
+- www.nyq.pcmag.com/products/26583?Company%3dLogitech+Inc
+Article_9:
+- www.nyq.pcmag.com/category2/0,2806,2376,00.asp
+- www.nyq.pcmag.com/category2/0,2806,1723348,00.asp
+- www.nyq.pcmag.com/category2/0,2806,1639516,00.asp
+- www.nyq.pcmag.com/category2/0,2806,1639152,00.asp
+- www.nyq.pcmag.com/products/1614?Company%3dSony%20Corporation
+Article_10:
+- www.nyq.pcmag.com/category2/0,2806,1261023,00.asp
+- www.nyq.pcmag.com/category2/0,2806,7495,00.asp
+- www.nyq.pcmag.com/products/26034?Company%3dMotorola%20Inc

@@ -4,20 +4,20 @@ require 'rspec/core/rake_task'
 require "selenium-webdriver"
 require "rspec"
 
-ENV["env"] ||= 'production'
+ENV["env"] ||= 'staging'
 environment = ENV['env']
 @browser = ENV['browser']
 
 
 desc "Run Tests"
 
-# RUN pcworld
-RSpec::Core::RakeTask.new('pcworld') do |t|
+# RUN pcmag
+RSpec::Core::RakeTask.new('pcmag') do |t|
 
   ENV['module'] = 'pcmag'
 
   if(ENV['report_dir'] == nil)
-    ENV['report_dir'] = "../Reports/PCWorld/" + environment + "#{@folder_name}"
+    ENV['report_dir'] = "../Reports/PCMag/" + environment + "#{@folder_name}"
   end 
 
   @report_dir = ENV['report_dir']
@@ -25,7 +25,7 @@ RSpec::Core::RakeTask.new('pcworld') do |t|
   if(ENV['folderpath'] != nil)
     @folder_name = ENV['folderpath']
   else
-    @folder_name="/PCWorld_" + Time.now.strftime("%Y-%m-%d_%H-%M-%S")+ "_#{@browser}"
+    @folder_name="/NYQA_263_PCMag_" + Time.now.strftime("%Y-%m-%d_%H-%M-%S")+ "_#{@browser}"
   end
   ENV['folderpath'] = @folder_name
   @report_name1 = "#{@folder_name}"+".html"
@@ -38,6 +38,311 @@ RSpec::Core::RakeTask.new('pcworld') do |t|
                     "--format RspecJunitFormatter --out reports#{@report_name3}",
                     "--color"]
   t.pattern = [
-      'spec/test.rb'
+      'spec/PCMag_Redesign/*.rb'
+  ]
+end
+
+# RUN Canonicals
+RSpec::Core::RakeTask.new('canonicals') do |t|
+
+  ENV['module'] = 'canonicals'
+
+ if(ENV['report_dir'] == nil)
+    ENV['report_dir'] = "../Reports/canonicals/" + environment + "#{@folder_name}"
+  end 
+
+  @report_dir = ENV['report_dir']
+
+  if(ENV['folderpath'] != nil)
+    @folder_name = ENV['folderpath']
+  else
+    @folder_name="/NYQA_82_canonicals_" + Time.now.strftime("%Y-%m-%d_%H-%M-%S")+ "_#{@browser}"
+  end
+
+ @report_name1 = "#{@folder_name}"+".html"
+  @report_name2 = "#{@folder_name}"+".json"
+  @report_name3 = "#{@folder_name}"+".xml"
+
+  t.rspec_opts = ["-Ilib","--format documentation",
+                    "--format html --out  #{@report_dir}#{@report_name1}",
+                    "--format json --out  #{@report_dir}#{@report_name2}",
+                    "--format RspecJunitFormatter --out reports#{@report_name3}",
+                    "--color"]
+
+  t.pattern = [
+      'spec/canonicals/*.rb'
+  ]
+end
+
+# RUN Meta-refresh
+RSpec::Core::RakeTask.new('metarefresh') do |t|
+
+ ENV['module'] = 'metarefresh'
+
+ if(ENV['report_dir'] == nil)
+    ENV['report_dir'] = "../Reports/metarefresh/" + environment + "#{@folder_name}"
+  end 
+
+  @report_dir = ENV['report_dir']
+
+  if(ENV['folderpath'] != nil)
+    @folder_name = ENV['folderpath']
+  else
+    @folder_name="/NYQA_130_metarefresh_" + Time.now.strftime("%Y-%m-%d_%H-%M-%S")+ "_#{@browser}"
+  end
+
+  @report_name1 = "#{@folder_name}"+".html"
+  @report_name2 = "#{@folder_name}"+".json"
+  @report_name3 = "#{@folder_name}"+".xml"
+
+  t.rspec_opts = ["-Ilib","--format documentation",
+                    "--format html --out  #{@report_dir}#{@report_name1}",
+                    "--format json --out  #{@report_dir}#{@report_name2}",
+                    "--format RspecJunitFormatter --out reports#{@report_name3}",
+                    "--color"]
+
+  t.pattern = [
+      'spec/metarefresh/*.rb'
+  ]
+end
+
+# RUN Ads
+RSpec::Core::RakeTask.new('ads') do |t|
+
+  ENV['module'] = 'ads'
+
+  if(ENV['report_dir'] == nil)
+    ENV['report_dir'] = "../Reports/Ads/" + environment + "#{@folder_name}"
+  end 
+
+  @report_dir = ENV['report_dir']
+  
+  if(ENV['folderpath'] != nil)
+    @folder_name = ENV['folderpath']
+  else
+    @folder_name="/NYQA_174_Ads_" + Time.now.strftime("%Y-%m-%d_%H-%M-%S")+ "_#{@browser}"
+  end
+  ENV['folderpath'] = @folder_name
+  @report_name1 = "#{@folder_name}"+".html"
+  @report_name2 = "#{@folder_name}"+".json"
+  @report_name3 = "#{@folder_name}"+".xml"
+
+  t.rspec_opts = ["-Ilib","--format documentation",
+                    "--format html --out  #{@report_dir}#{@report_name1}",
+                    "--format json --out  #{@report_dir}#{@report_name2}",
+                    "--format RspecJunitFormatter --out reports#{@report_name3}",
+                    "--color"]
+  t.pattern = [
+      'spec/ads/*.rb'
+  ]
+end
+
+RSpec::Core::RakeTask.new('cse') do |t|
+
+  ENV['module'] = 'cse'
+
+  if(ENV['report_dir'] == nil)
+    ENV['report_dir'] = "../Reports/cse/" + environment + "#{@folder_name}"
+  end 
+
+  @report_dir = ENV['report_dir']
+  
+  if(ENV['folderpath'] != nil)
+    @folder_name = ENV['folderpath']
+  else
+    @folder_name="/NYQA_262_cse_" + Time.now.strftime("%Y-%m-%d_%H-%M-%S")+ "_#{@browser}"
+  end
+  ENV['folderpath'] = @folder_name
+  @report_name1 = "#{@folder_name}"+".html"
+  @report_name2 = "#{@folder_name}"+".json"
+  @report_name3 = "#{@folder_name}"+".xml"
+
+  t.rspec_opts = ["-Ilib","--format documentation",
+                    "--format html --out  #{@report_dir}#{@report_name1}",
+                    "--format json --out  #{@report_dir}#{@report_name2}",
+                    "--format RspecJunitFormatter --out reports#{@report_name3}",
+                    "--color"]
+  t.pattern = [
+      'spec/cse/*.rb'
+  ]
+end
+
+RSpec::Core::RakeTask.new('logicbuy') do |t|
+
+  ENV['module'] = 'logicbuy'
+
+  if(ENV['report_dir'] == nil)
+    ENV['report_dir'] = "../Reports/Logicbuy/" + environment + "#{@folder_name}"
+  end
+
+  @report_dir = ENV['report_dir']
+  
+  if(ENV['folderpath'] != nil)
+    @folder_name = ENV['folderpath']
+  else
+    @folder_name="/NYQA_86_Logicbuy_" + Time.now.strftime("%Y-%m-%d_%H-%M-%S")+ "_#{@browser}"
+  end
+  ENV['folderpath'] = @folder_name
+  @report_name1 = "#{@folder_name}"+".html"
+  @report_name2 = "#{@folder_name}"+".json"
+  @report_name3 = "#{@folder_name}"+".xml"
+
+  t.rspec_opts = ["-Ilib","--format documentation",
+                    "--format html --out #{@report_dir}#{@report_name1}",
+                    "--format json --out #{@report_dir}#{@report_name2}",
+                    "--format RspecJunitFormatter --out reports#{@report_name3}",
+                    "--color"]
+  t.pattern = [
+      'spec/logicbuy/*.rb'
+  ]
+end
+
+RSpec::Core::RakeTask.new('geek') do |t|
+
+  ENV['module'] = 'geek'
+
+  if(ENV['report_dir'] == nil)
+    ENV['report_dir'] = "../Reports/geek/" + environment + "#{@folder_name}"
+  end 
+
+  @report_dir = ENV['report_dir']
+  
+  if(ENV['folderpath'] != nil)
+    @folder_name = ENV['folderpath']
+  else
+    @folder_name="/NYQA_97_geek_" + Time.now.strftime("%Y-%m-%d_%H-%M-%S")+ "_#{@browser}"
+  end
+  ENV['folderpath'] = @folder_name
+  @report_name1 = "#{@folder_name}"+".html"
+  @report_name2 = "#{@folder_name}"+".json"
+  @report_name3 = "#{@folder_name}"+".xml"
+
+  t.rspec_opts = ["-Ilib","--format documentation",
+                    "--format html --out  #{@report_dir}#{@report_name1}",
+                    "--format json --out  #{@report_dir}#{@report_name2}",
+                    "--format RspecJunitFormatter --out reports#{@report_name3}",
+                    "--color"]
+  t.pattern = [
+      'spec/geek/*.rb'
+  ]
+end
+
+# RUN LinkChecker
+RSpec::Core::RakeTask.new('linkchecker') do |t|
+    ENV['module'] = 'linkchecker'
+
+
+  if(ENV['report_dir'] == nil)
+    ENV['report_dir'] = "../Reports/PCMag/" + environment + "#{@folder_name}"
+  end 
+
+  @report_dir = ENV['report_dir']
+  
+  if(ENV['folderpath'] != nil)
+    @folder_name = ENV['folderpath']
+  else
+    @folder_name="/NYQA_305_PCMag_LinkChecker_" + Time.now.strftime("%Y-%m-%d_%H-%M-%S")+ "_#{@browser}"
+  end
+
+  @report_name1 = "#{@folder_name}"+".html"
+  @report_name2 = "#{@folder_name}"+".json"
+  @report_name3 = "#{@folder_name}"+".xml"
+
+  t.rspec_opts = ["-Ilib","--format documentation",
+                    "--format html > #{@report_dir}#{@report_name1}",
+                    "--format json --out  #{@report_dir}#{@report_name2}",
+                    "--format RspecJunitFormatter --out #{@report_dir}#{@report_name3}",
+                    "--color"]
+  t.pattern = [
+      'spec/LinkChecker/*.rb'
+  ]
+end
+
+# RUN adrefresh
+RSpec::Core::RakeTask.new('adrefresh') do |t|
+
+  if(ENV['report_dir'] == nil)
+    ENV['report_dir'] = "../Reports/PCMag/" + environment + "#{@folder_name}"
+  end 
+
+  @report_dir = ENV['report_dir']
+  
+  if(ENV['folderpath'] != nil)
+    @folder_name = ENV['folderpath']
+  else
+    @folder_name="/NYQA_305_PCMag_LinkChecker_" + Time.now.strftime("%Y-%m-%d_%H-%M-%S")+ "_#{@browser}"
+  end
+
+  @report_name1 = "#{@folder_name}"+".html"
+  @report_name2 = "#{@folder_name}"+".json"
+  @report_name3 = "#{@folder_name}"+".xml"
+
+  t.rspec_opts = ["-Ilib","--format documentation",
+                    "--format html --out #{@report_dir}#{@report_name1}",
+                    "--format json --out #{@report_dir}#{@report_name2}",
+                    "--format RspecJunitFormatter --out #{@report_dir}#{@report_name3}",
+                    "--color"]
+  t.pattern = [
+      'spec/Adrefresh/*.rb'
+  ]
+end
+
+RSpec::Core::RakeTask.new('all') do |t|
+
+  ENV['module'] = 'all'
+
+  if(ENV['report_dir'] == nil)
+    ENV['report_dir'] = "../Reports/all/" + environment + "#{@folder_name}"
+  end 
+
+  @report_dir = ENV['report_dir']
+  
+  if(ENV['folderpath'] != nil)
+    @folder_name = ENV['folderpath']
+  else
+    @folder_name="/NYQA_" + Time.now.strftime("%Y-%m-%d_%H-%M-%S")+ "_#{@browser}"
+  end
+  ENV['folderpath'] = @folder_name
+  @report_name1 = "#{@folder_name}"+".html"
+  @report_name2 = "#{@folder_name}"+".json"
+  @report_name3 = "#{@folder_name}"+".xml"
+
+  t.rspec_opts = ["-Ilib","--format documentation",
+                    "--format html --out  #{@report_dir}#{@report_name1}",
+                    "--format json --out  #{@report_dir}#{@report_name2}",
+                    "--format RspecJunitFormatter --out reports#{@report_name3}",
+                    "--color"]
+  t.pattern = [
+      'spec/*/*.rb'
+  ]
+end
+
+RSpec::Core::RakeTask.new('solr') do |t|
+
+  ENV['module'] = 'solr'
+
+  if(ENV['report_dir'] == nil)
+    ENV['report_dir'] = "../Reports/SOLR/" + environment + "#{@folder_name}"
+  end 
+
+  @report_dir = ENV['report_dir']
+  
+  if(ENV['folderpath'] != nil)
+    @folder_name = ENV['folderpath']
+  else
+    @folder_name="/NYQA_132_SOLR_" + Time.now.strftime("%Y-%m-%d_%H-%M-%S")+ "_#{@browser}"
+  end
+  ENV['folderpath'] = @folder_name
+  @report_name1 = "#{@folder_name}"+".html"
+  @report_name2 = "#{@folder_name}"+".json"
+  @report_name3 = "#{@folder_name}"+".xml"
+
+  t.rspec_opts = ["-Ilib","--format documentation",
+                    "--format html --out  #{@report_dir}#{@report_name1}",
+                    "--format json --out  #{@report_dir}#{@report_name2}",
+                    "--format RspecJunitFormatter --out reports#{@report_name3}",
+                    "--color"]
+  t.pattern = [
+      'spec/solr/*.rb'
   ]
 end

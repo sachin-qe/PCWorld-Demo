@@ -1,4 +1,86 @@
-pcworld:
-  baseurl: http://www.pcworld.com
+pcmag_development:
+  baseurl: http://www.pcmag.com
   
+pcmag_staging:
+  baseurl: preview.nyq.pcmag.com
+  baseurl2: preview.nyq.appscout.pcmag.com
+  baseurl3: preview.nyq.securitywatch.pcmag.com
 
+pcmag_production:
+  baseurl: www.pcmag.com
+  baseurl2: appscout.pcmag.com
+  baseurl3: securitywatch.pcmag.com
+
+canonicals_production:
+  baseurl: www.pcmag.com
+  baseurl2: appscout.pcmag.com
+  baseurl3: securitywatch.pcmag.com
+
+canonicals_staging:
+  baseurl: preview.nyq.pcmag.com
+  baseurl2: preview.nyq.appscout.pcmag.com
+  baseurl3: preview.nyq.securitywatch.pcmag.com
+
+metarefresh_production:
+  baseurl: www.pcmag.com
+  baseurl2: appscout.pcmag.com
+  baseurl3: securitywatch.pcmag.com
+
+metarefresh_staging:
+  baseurl: preview.nyq.pcmag.com
+  baseurl2: preview.nyq.appscout.pcmag.com
+  baseurl3: preview.nyq.securitywatch.pcmag.com
+
+ads_production:
+  baseurl: www.pcmag.com
+  baseurl2: appscout.pcmag.com
+  baseurl3: securitywatch.pcmag.com
+
+ads_staging:
+  baseurl: preview.nyq.pcmag.com
+  baseurl2: preview.nyq.appscout.pcmag.com
+  baseurl3: preview.nyq.securitywatch.pcmag.com
+
+cse_production:
+  baseurl: www.pcmag.com
+  baseurl2: appscout.pcmag.com
+  baseurl3: securitywatch.pcmag.com
+
+cse_staging:
+  baseurl: preview.nyq.pcmag.com
+  baseurl2: preview.nyq.appscout.pcmag.com
+  baseurl3: preview.nyq.securitywatch.pcmag.com
+
+logicbuy_development:
+  baseurl: 
+  
+logicbuy_staging:
+  baseurl: qa.logicbuy.com
+
+logicbuy_production:
+  baseurl: www.logicbuy.com
+
+geek_development:
+  baseurl: 
+  
+geek_staging:
+  baseurl: qa.geek.com
+
+geek_production:
+  baseurl: www.geek.com
+
+geek_sauce:
+  baseurl: www.geek.com
+
+all_development:
+  baseurl: http://www.pcmag.com
+  
+all_staging:
+  baseurl: preview.nyq.pcmag.com
+  baseurl2: preview.nyq.appscout.pcmag.com
+  baseurl3: preview.nyq.securitywatch.pcmag.com
+
+all_production:
+  baseurl: www.pcmag.com
+  baseurl2: appscout.pcmag.com
+  baseurl3: securitywatch.pcmag.com

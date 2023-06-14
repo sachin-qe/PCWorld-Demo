@@ -1,0 +1,59 @@
+ -
+  url: "/article2/0,2817,2403874,00.asp"
+  description: Standard Article (inline) 
+  inline: true
+  bin: false
+ -
+  url: "/article2/0,2817,2417397,00.asp"
+  description: News Article (inline)
+  inline: true
+  bin: false 
+ -
+  url: "/article2/0,2817,2408648,00.asp"
+  description: Commentary article (inline)
+  inline: true
+  bin: false 
+ -
+  url: "/reviews"
+  description: Reviews TLD (inline)
+  inline: true
+  bin: false 
+ -
+  url: "/reviews/digital-cameras"
+  description: Product Guide (inline)
+  inline: true
+  bin: false 
+ -
+  url: "/article2/0,2817,2389390,00.asp"
+  description: Compare (inline)
+  inline: true
+  bin: false
+ -
+  url: "/article2/0,2817,2405106,00.asp"
+  description: Roundup Chart (inline)
+  inline: true
+  bin: false
+ -
+  url: "/article2/0,2817,2424234,00.asp"
+  description: RStandard Slideshow (inline)
+  inline: true
+  bin: false
+ -
+  url: "/article2/0,2817,2413412,00.asp"
+  description: Product Review (inline + BIN)
+  inline: true
+  bin: true 
+
+ -
+  url: "/article2/0,2817,2418035,00.asp"
+  description: Preview article (inline + BIN)
+  inline: true
+  bin: true
+
+
+
+
+
+
+
+

@@ -2,7 +2,7 @@ require "rake"
 require "selenium-webdriver"
 require "Function_Library"
 require "rspec"
-require "fileutils"
+require "FileUtils"
 require 'rest-client'
 
 class Helper
@@ -34,10 +34,12 @@ class Helper
             @obj = Function_Library.new
             @selenium = @obj.browser_setup(platform,browser)
             RSpec.configuration.selenium = @selenium
+           #@selenium.manage.add_cookie :name => '_USERCOUNTRY6', :value => "IN"
+           #@selenium.manage.add_cookie :name => 'visited', :value => "true"
           end
         else
           $flag1 = 1
-          print "<p>Server is Down config</p>"            
+          print "<p>Server is Down</p>"            
           exit 
         end 
       else 
@@ -54,5 +56,18 @@ class Helper
       end
     end
 
-  end 
-end # Class end
+    config.after(:each) do |group|
+      if (group.example.instance_variable_get("@exception") && browser != "headless")
+        if(group.example.metadata[:example_group][:description_args].first != ENV['description'])
+          @sentence = group.example.metadata[:example_group][:description_args].first
+          ENV['description']= group.example.metadata[:example_group][:description_args].first
+          @sentence = @sentence.to_s.gsub! ' ', '_'
+        end
+        @selenium=(RSpec.configuration.selenium)          
+        FileUtils.mkdir_p($result) unless File.exists?($result)
+        @selenium.save_screenshot("#{$result}/#{ENV['description']}_#{$flag+1}.png")
+        $flag = $flag+1          
+      end
+    end
+  end
+end

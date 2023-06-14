@@ -1,0 +1,98 @@
+---
+Article_1:
+  Article_title: Test_Article_title_372
+  Primary_Archive_Section: Home > Reviews > Consumer Electronics > Gaming > Games
+  Ad_Topic: CE>Gaming
+  Filter_Image_id: 378277
+  Primary_Image: 378265
+  Slide_show: 311561
+  Related_Companies: Microsoft
+  Body: This is Games Article
+  Article_id: PC Magazine
+Article_2:
+  Article_title: Test_Article_title_2159
+  Primary_Archive_Section: Home > Reviews > Cell Phones
+  Ad_Topic: HW>Phones & PDAs
+  Filter_Image_id: 378277
+  Primary_Image: 378265
+  Slide_show: 311561
+  Related_Companies: Nokia
+  Body: This is Cell Phone Article
+  Article_id: PC Magazine
+Article_3:
+  Article_title: Test_Article_title_6629
+  Primary_Archive_Section: Home > Reviews > Software
+  Ad_Topic: SW>PC Software Other
+  Filter_Image_id: 378277
+  Primary_Image: 378265
+  Slide_show: 311561
+  Related_Companies: Microsoft
+  Body: This is Software Article
+Article_4:
+  Article_title: Test_Article_title_4855
+  Primary_Archive_Section: Home > Reviews > Consumer Electronics
+  Ad_Topic: CE>HDTV & Home Theatre
+  Filter_Image_id: 378277
+  Primary_Image: 378265
+  Slide_show: 311561
+  Related_Companies: Sony
+  Body: This is Consumer Electronics Article
+  Article_id: PC Magazine
+Article_5:
+  Article_title: Test_Article_title_8131
+  Primary_Archive_Section: Home > Reviews > Printers & Scanners
+  Ad_Topic: HW>Printers
+  Filter_Image_id: 378277
+  Primary_Image: 378265
+  Slide_show: 311561
+  Related_Companies: HP
+  Body: This is Printers and Scanners Article
+Article_6:
+  Article_title: Test_Article_title_4060
+  Primary_Archive_Section: Home > Reviews > Laptops & Notebooks
+  Ad_Topic: HW>Laptops
+  Filter_Image_id: 378277
+  Primary_Image: 378265
+  Slide_show: 311561
+  Related_Companies: Lenovo
+  Body: This is Laptops and Notebooks Article
+  Article_id: PC Magazine
+Article_7:
+  Article_title: Test_Article_title_3607
+  Primary_Archive_Section: Home > Reviews > Software > Operating Systems/Platforms
+  Ad_Topic: SW>Operating Systems
+  Filter_Image_id: 378277
+  Primary_Image: 378265
+  Slide_show: 311561
+  Related_Companies: Microsoft
+  Body: This is Operating System Article
+  Article_id: PC Magazine
+Article_8:
+  Article_title: Test_Article_title_9165
+  Primary_Archive_Section: Home > Reviews > Consumer Electronics > Audio
+  Ad_Topic: CE>Audio
+  Filter_Image_id: 378277
+  Primary_Image: 378265
+  Slide_show: 311561
+  Related_Companies: Sony
+  Body: This is Consumer Electronics Audio Article
+  Article_id: PC Magazine
+Article_9:
+  Article_title: Test_Article_title_6857
+  Primary_Archive_Section: Home > Reviews > Storage Devices
+  Ad_Topic: HW>Peripherals & Input Devices
+  Filter_Image_id: 378277
+  Primary_Image: 378265
+  Slide_show: 311561
+  Related_Companies: Sony
+  Body: This is Storage Device Article
+  Article_id: PC Magazine
+Article_10:
+  Article_title: 
+  Primary_Archive_Section: Home > Reviews > Software > Security
+  Ad_Topic: SW>Security
+  Filter_Image_id: 378277
+  Primary_Image: 378265
+  Slide_show: 311561
+  Related_Companies: Symantec
+  Body: This is Security Device article

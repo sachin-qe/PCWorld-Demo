@@ -1,0 +1,153 @@
+ -
+  url: "/news/"
+  pending: false
+  href: "/news"
+ -
+  url: "/best-deals-today/"
+  pending: false
+  href: "/best-deals-today"  
+ -
+  url: "/encyclopedia"
+  pending: false
+  href: "/encyclopedia/index/a"
+ -
+  url: "/encyclopedia/term/62456/all-cloud-environment"
+  pending: false
+  href: "/encyclopedia/term/62456/all-cloud-environment"
+ -
+  url: "/encyclopedia/index/t"
+  pending: false
+  href: "/encyclopedia/index/t"
+ -
+  url: "/category2/0,2806,1826635,00.asp"
+  pending: false
+  href: "/category2/0,2806,1826635,00.asp"
+ -
+  url: "/article2/0,2817,2419076,00.asp"
+  pending: false
+  href: "/article2/0,2817,2419076,00.asp"
+ -
+  url: "/article2/0,2817,2406273,00.asp"
+  href: "/article2/0,2817,2406273,00.asp"
+  pending: false
+ -
+  url: "/article2/0,2817,2406344,00.asp"
+  href: "/article2/0,2817,2406344,00.asp"
+  pending: false
+ -
+  url: "/category2/0,2806,1528273,00.asp"
+  href: "/category2/0,2806,1528273,00.asp"
+  pending: false
+ -
+  url: "/article2/0,2817,2418079,00.asp"
+  href: "/article2/0,2817,2418079,00.asp"
+  pending: false
+ -
+  url: "/article2/0,2817,2418472,00.asp"
+  href: "/article2/0,2817,2418472,00.asp"
+  pending: false
+ -
+  url: "/article2/0,2817,2418823,00.asp"
+  href: "/article2/0,2817,2418823,00.asp"
+  pending: false
+ -
+  url: "/article2/0,2817,2401971,00.asp"
+  href: "/article2/0,2817,2401971,00.asp"
+  pending: false
+ -
+  url: "/slideshow/story/307939/10-must-have-skyrim-mods"
+  href: "/slideshow/story/307939/10-must-have-skyrim-mods"
+  pending: false
+ - 
+  url: ""
+  href: "/"
+  pending: false
+ -
+  url: "/reviews"
+  href: "/category2/0,2806,13,00.asp"
+  pending: false
+ -
+  url: "/reviews/laptop-computers"
+  href: "/reviews/laptop-computers"
+  pending: false
+ -
+  url: "/reviews/desktop-computers" 
+  href: "/reviews/desktop-computers" 
+  pending: false
+ -
+  url: "/reviews/cell-phones"
+  href: "/reviews/cell-phones"
+  pending: false
+ -
+  url: "/reviews/mobile-apps"
+  href: "/category2/0,2806,2340963,00.asp"
+  pending: false
+ -
+  url: "/reviews/digital-cameras"
+  href: "/reviews/digital-cameras"
+  pending: false
+ -
+  url: "/reviews/HDTV"
+  href: "/reviews/HDTV"
+  pending: false
+ -
+  url: "/reviews/printers"
+  href: "/reviews/printers" 
+  pending: false
+ -
+  url: "/reviews/scanners"
+  href: "/category2/0,2806,7497,00.asp"
+  pending: false
+ -
+  url: "/reviews/networking"
+  href: "/category2/0,2806,8,00.asp"
+  pending: false
+ -
+  url: "/reviews/software"
+  href: "/reviews/software"
+  pending: false
+ -
+  url: "/reviews/security-software"
+  href: "/reviews/security-software"
+  pending: false
+ -
+  url: "/downloads"
+  href: "/downloads"
+  pending: false
+ -
+  url: "/business"
+  href: "/business"
+  pending: false
+ -
+  url: "/tips"
+  href: "/tips"
+  pending: false
+ -
+  url: "/editors-choice"
+  href: "/category2/0,2806,198,00.asp"
+  pending: false
+ -
+  url: "/readers-choice"
+  href: "/category2/0,2806,1626131,00.asp"
+  pending: false
+ -
+  url: "/fastest-mobile-networks"
+  href: "/category2/0,2806,2364549,00.asp"
+  pending: false
+ -
+  url: "/products/compare/1565?ids=308673,308671"
+  href: "/products/compare/1565?ids=308673,308671"
+  pending: true
+ -
+  url: "/products/1713"
+  href: "/products/1713"
+  pending: false
+ -
+  url: "/article2/0,2817,2372369,00.asp"
+  href: "/article2/0,2817,2372369,00.asp"
+  pending: false
+ -
+  url: "/search_redirect/?qry=apple"
+  href: "/search_redirect/?qry=apple"
+  pending: false
+  

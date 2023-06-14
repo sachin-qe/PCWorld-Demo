@@ -1,0 +1,71 @@
+---
+Data_1:
+  Product_Name: product_Gaming
+  Product_Category_id: '21240,21243,21247,21249,21041'
+  Product_Category_name: Games (21240)
+  product_Image: image1 (378277)
+  product_id: '39264'
+  Manufacturer: Microsoft
+Data_2:
+  Product_Name: product_CellPhones
+  Product_Category_id: '21043,21260,30733'
+  Product_Category_name: Mobile Apps (30733)
+  product_Image: image1 (378277)
+  product_id: '39263'
+  Manufacturer: Nokia
+Data_3:
+  Product_Name: product_Software
+  Product_Category_id: '28072,21124,28075,21129,21043'
+  Product_Category_name: Browsers (21129)
+  product_Image: image1 (378277)
+  product_id: '39269'
+  Manufacturer: Google Inc
+Data_4:
+  Product_Name: product_ConsumerElectronics
+  Product_Category_id: '32385,21049,22585,21043'
+  Product_Category_name: HDTVs (21049)
+  product_Image: image1 (378277)
+  product_id: '39260'
+  Manufacturer: LG Electronics U.S.A. Inc
+Data_5:
+  Product_Name: product_PrintersScanners
+  Product_Category_id: '32464,21044,21091,32466,32467,21234,30798'
+  Product_Category_name: Laptops & Notebooks (21234)
+  product_Image: image1 (378277)
+  product_id: '39265'
+  Manufacturer: Canon U.S.A. Inc
+Data_6:
+  Product_Name: product_Laptops and notebooks
+  Product_Category_id: '21234,30798,32383'
+  Product_Category_name: Mac Laptops (32383)
+  product_Image: image1 (378277)
+  product_id: '39266'
+  Manufacturer: Lenovo
+Data_7:
+  Product_Name: product_Software_OperatingSystems
+  Product_Category_id: '21083,21085,21086,28074'
+  Product_Category_name: Macintosh OSX (21086)
+  product_Image: image1 (378277)
+  product_id: '39268'
+  Manufacturer: Apple Inc.
+Data_8:
+  Product_Name: product_CE_Music
+  Product_Category_id: '21225,21228,21229,21113'
+  Product_Category_name: Headphones (21229)
+  product_Image: image1 (378277)
+  product_id: '41339'
+  Manufacturer: Logitech Inc
+Data_9:
+  Product_Name: product_StorageDevice
+  Product_Category_id: '21074,21082,21081,21113'
+  Product_Category_name: Storage Devices (21074)
+  product_Image: image1 (378277)
+  product_id: '41340'
+  Manufacturer: Sony Corporation
+Data_10:
+  Product_Name: product_ SecurityDevices
+  Product_Category_id: '21219,21220'
+  Product_Category_name: Biometric Devices (21220)
+  product_Image: image1 (378277)
+  product_id: '39217'
+  Manufacturer: Motorola Inc
